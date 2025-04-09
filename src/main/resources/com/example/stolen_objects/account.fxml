@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stolen_objects.AccountController">
+   <children>
+      <TextField alignment="CENTER" prefHeight="63.0" prefWidth="600.0" style="-fx-background-color: blue;" text="Creer un compte">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.1" contrast="0.4" hue="-0.4" />
+         </effect>
+      </TextField>
+      <TextField alignment="CENTER" layoutX="33.0" layoutY="111.0" prefHeight="30.0" prefWidth="106.0" text="matricule">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" layoutX="33.0" layoutY="158.0" prefHeight="24.0" prefWidth="100.0" text="nom">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="33.0" layoutY="210.0" prefHeight="29.0" prefWidth="100.0" text="Adresse">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="33.0" layoutY="268.0" text="numero de telepĥone">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="matricule" layoutX="195.0" layoutY="114.0" prefHeight="24.0" prefWidth="208.0" />
+      <TextField fx:id="nom" layoutX="195.0" layoutY="158.0" prefHeight="24.0" prefWidth="208.0" />
+      <TextField fx:id="adresse" layoutX="203.0" layoutY="210.0" prefHeight="24.0" prefWidth="201.0" />
+      <TextField fx:id="tel" layoutX="245.0" layoutY="268.0" prefHeight="24.0" prefWidth="160.0" />
+      <RadioButton layoutX="41.0" layoutY="372.0" mnemonicParsing="false" onAction="#OnRegister" text="Enregister" />
+   </children>
+</Pane>

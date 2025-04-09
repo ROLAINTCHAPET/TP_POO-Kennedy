@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stolen_objects.StolenController">
+   <children>
+      <TextField alignment="CENTER" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: violet;" text="Enregister un objet volé">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.12" contrast="0.98" hue="0.12" saturation="0.45" />
+         </effect>
+      </TextField>
+      <TextField layoutX="44.0" layoutY="136.0" prefHeight="33.0" prefWidth="137.0" text="Votre Code">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="51.0" layoutY="203.0" prefHeight="30.0" prefWidth="130.0" text="Code_article">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <RadioButton layoutX="51.0" layoutY="282.0" mnemonicParsing="false" onAction="#OnRegisterStolen" text="enrégistrer" />
+      <TextField fx:id="code" layoutX="202.0" layoutY="141.0" />
+      <TextField fx:id="nom_ar" layoutX="202.0" layoutY="203.0" />
+      <TextArea fx:id="StolenTextArea" layoutX="385.0" layoutY="63.0" prefHeight="364.0" prefWidth="214.0" style="-fx-background-color: pink;" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="-0.02" />
+         </effect>
+      </TextArea>
+   </children>
+</Pane>

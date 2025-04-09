@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stolen_objects.HelloController">
+   <children>
+      <Pane layoutX="23.0" layoutY="22.0" prefHeight="410.0" prefWidth="555.0">
+         <children>
+            <Pane layoutX="13.0" layoutY="7.0" prefHeight="388.0" prefWidth="530.0">
+               <children>
+                  <TextArea layoutX="9.0" layoutY="46.0" prefHeight="90.0" prefWidth="514.0" text="Bienvenue chez buy_secure, vous pouvez acheter les articles que vous desirez,Creez un compte et recevez des notifications" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </TextArea>
+                  <Button layoutX="184.0" layoutY="194.0" mnemonicParsing="false" onAction="#OnClickOpen_buy_page" prefHeight="24.0" prefWidth="164.0" style="-fx-background-color: pink;" text=" Acheter un article">
+                     <effect>
+                        <ColorAdjust brightness="-0.24" contrast="0.98" hue="0.07" saturation="0.14" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="172.0" layoutY="239.0" mnemonicParsing="false" onAction="#OnSignalStolen" prefHeight="24.0" prefWidth="186.0" style="-fx-background-color: pink;" text="Signaler un objet volé">
+                     <effect>
+                        <ColorAdjust brightness="0.1" contrast="0.5" hue="0.64" saturation="0.79" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="172.0" layoutY="278.0" mnemonicParsing="false" onAction="#OnCreateUserAccount" prefHeight="24.0" prefWidth="186.0" text="Créer un compte">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="158.0" layoutY="325.0" mnemonicParsing="false" onAction="#OnVerifyStolenObjects" prefHeight="28.0" prefWidth="217.0" style="-fx-background-color: Yellow;" text="Verifier Les Objets Volés">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="-0.19" contrast="0.36" hue="0.02" saturation="0.33" />
+                     </effect>
+                  </Button>
+               </children>
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="1.81" specularConstant="0.85" specularExponent="34.42" surfaceScale="2.9">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</Pane>

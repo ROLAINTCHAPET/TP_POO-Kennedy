@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stolen_objects.StolenObjectListController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextArea fx:id="stolenObjectsTextArea" layoutX="41.0" layoutY="52.0" prefHeight="298.0" prefWidth="524.0" />
+            <TextField alignment="CENTER" layoutX="-3.0" layoutY="-3.0" prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: red;" text="ObJets volés">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="0.19" contrast="1.0" hue="0.12" saturation="0.83" />
+               </effect>
+            </TextField>
+            <RadioButton layoutX="14.0" layoutY="332.0" mnemonicParsing="false" onAction="#printStolenObjects" text="Voir les objets volés" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
